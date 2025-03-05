@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="./styles/daisyui.css">
+</head>
+<body class="bg-[#F4F7FF]">
+    <header  class="max-w-6xl mx-auto bg-white  mt-5 px-5 py-2 rounded-lg">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-3">
+                <img src="./A5-Dev-Board/assets/logo.png" alt="">
+                <p class="text-2xl">Dev <span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="flex items-center bg-slate-100 rounded-xl p-1">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                <p id="twenty-three" class="text-2xl font-bold">23</p>
+                </div>
+                <img id="color-cng" src="./A5-Dev-Board/assets/theme-btn.png" alt="">
+            </div>
+        </div>
+
+
+        <!--  -->
+        
+    </header>
+
+
+
+
+    <main class="max-w-6xl mx-auto mt-5 py-2 rounded-lg">
+        <div class="flex gap-5 ">
+            <div class="w-3/4 bg-white p-5 rounded-lg">
+                <div class="flex gap-5">
+                    <div class="flex items-center gap-5 bg-[#F4F7FF] p-5 w-1/3 rounded-lg">
+                        <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                        <div>
+                            <p >Task Assigned</p>
+                            <p id="task-assigned" class="text-2xl font-bold">06</p>
+                        </div>
+                    </div>
+        
+        
+                    <div id="discover" class="bg-linear-to-r/shorter from-indigo-500 to-sky-500 rounded-lg w-2/3 p-5 flex">
+                        <img src="./A5-Dev-Board/assets/board.png" alt="">
+                        <p class="text-white">Discover Something <br> New Today!</p>
+                    </div>
+        
+        
+                    <div class="bg-[#F4F7FF] p-5 flex items-center gap-5 w-1/3 rounded-lg">
+                        <img class="bg-white p-1 rounded-2xl" src="./A5-Dev-Board/assets/calender.png" alt="">
+                        <p>Wed ,<br> <span class="font-bold">Jul 28 2025</span> </p>
+                    </div>
+                </div>
+        
+                <div class="grid grid-cols-3 gap-5 button-container">
+                    <div class="bg-[#F4F7FF] mt-5 p-5 rounded-lg">
+                        <p class="bg-white w-fit px-2 py-1 rounded-lg">ShopEase</p>
+                        <h3 class="font-medium text-xl">Fix Mobile Button Issue </h3>
+                        <p class="bg-white p-5 rounded-lg my-3">Debug using Chrome DevTools, check for overlapping elements,</p>
+                        <div class="flex gap-5">
+                            <p>Deadline <br> <span class="font-medium">21 March 2025</span></p>
+                            <button class="px-4 py-1 bg-blue-600 text-white rounded-lg buttons" id="cmplt-btn">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] mt-5 p-5 rounded-lg">
+                        <p class="bg-white w-fit px-2 py-1 rounded-lg">CloudSync</p>
+                        <h3 class="font-medium text-xl">Add Dark Mode </h3>
+                        <p class="bg-white p-5 rounded-lg my-3">Store the user's preference in localStorage, update CSS variables,</p>
+                        <div class="flex gap-5">
+                            <p>Deadline <br> <span class="font-medium">21 March 2025</span></p>
+                            <button class="px-4 bg-blue-600 text-white rounded-lg buttons" id="cmplt-btn">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] mt-5 p-5 rounded-lg">
+                        <p class="bg-white w-fit px-2 py-1 rounded-lg">SwiftPay</p>
+                        <h3 class="font-medium text-xl">Optimize  Home page  </h3>
+                        <p class="bg-white p-5 rounded-lg my-3">Debug using Chrome DevTools, check for overlapping elements,</p>
+                        <div class="flex gap-5">
+                            <p>Deadline <br> <span class="font-medium">21 March 2025</span></p>
+                            <button class="px-4 py-1 bg-blue-600 text-white rounded-lg buttons" id="cmplt-btn">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] mt-5 p-5 rounded-lg">
+                        <p class="bg-white w-fit px-2 py-1 rounded-lg">Meta</p>
+                        <h3 class="font-medium text-xl">Add new emoji 🤲 </h3>
+                        <p class="bg-white p-5 rounded-lg my-3 w-fix">Debug using Chrome DevTools, check for overlapping elements,</p>
+                        <div class="flex gap-5">
+                            <p>Deadline <br> <span class="font-medium">21 March 2025</span></p>
+                            <button class="px-4 py-1 bg-blue-600 text-white rounded-lg buttons" id="cmplt-btn">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] mt-5 p-5 rounded-lg">
+                        <p class="bg-white w-fit px-2 py-1 rounded-lg">Google LLC</p>
+                        <h3 class="font-medium text-xl">Integrate OpenAI API  </h3>
+                        <p class="bg-white p-5 rounded-lg my-3 w-fix">Debug using Chrome DevTools, check for overlapping elements,</p>
+                        <div class="flex gap-5">
+                            <p>Deadline <br> <span class="font-medium">21 March 2025</span></p>
+                            <button class="px-4 py-1 bg-blue-600 text-white rounded-lg buttons" id="cmplt-btn">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] mt-5 p-5 rounded-lg">
+                        <p class="bg-white w-fit px-2 py-1 rounded-lg">Glassdoar</p>
+                        <h3 class="font-medium text-xl">Improve Job searching  </h3>
+                        <p class="bg-white p-5 rounded-lg my-3 w-fix">Debug using Chrome DevTools, check for overlapping elements,</p>
+                        <div class="flex gap-5">
+                            <p>Deadline <br> <span class="font-medium">21 March 2025</span></p>
+                            <button class="px-4 py-1 bg-blue-600 text-white rounded-lg " id="cmplt-btn">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="w-1/4 bg-white p-5 rounded-lg" >
+                <div class="flex items-center gap-5 justify-center">
+                    <img src="./A5-Dev-Board/assets/activity.png" alt="">
+                    <h3>Activity Log</h3>
+                </div>
+                
+                <button id="clr-history" class="px-4 py-1 bg-blue-600 text-white rounded-lg mt-4 mb-10 ml-18" >Clear History</button>
+                <hr>
+                <ul id="activity-log"></ul>
+            </div>
+        </div>
+        
+        
+    </main>
+
+    <script src="./java/java.js"></script>
+</body>
+</html>
